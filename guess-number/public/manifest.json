@@ -1,0 +1,40 @@
+{
+  "name": "My Applet",
+  "description": "",
+  "icons": [
+    {
+      "src": "icon-128x128.png"
+    }
+  ],
+  "actions": {
+    "set_number": {
+      "description": "Sets the number to guess.",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number"
+          },
+          "end": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "guess": {
+      "description": "Guesses the number.",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "guess": {
+            "type": "number"
+          }
+        },
+        "required": ["guess"]
+      }
+    },
+    "reset": {
+      "description": "Resets the game."
+    }
+  }
+}
