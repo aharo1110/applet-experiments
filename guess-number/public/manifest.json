@@ -8,7 +8,7 @@
   ],
   "actions": {
     "set_number": {
-      "description": "Sets the number to guess.",
+      "description": "Starts the game by setting a number to guess. If no start/end values are provided or inferred, the number will be between 1 and 20.",
       "params_schema": {
         "type": "object",
         "properties": {
@@ -22,7 +22,7 @@
       }
     },
     "guess": {
-      "description": "Guesses the number.",
+      "description": "Guesses the number. If the input is just a number, it will be used as the guess.",
       "params_schema": {
         "type": "object",
         "properties": {
@@ -34,7 +34,7 @@
       }
     },
     "reset": {
-      "description": "Resets the game."
+      "description": "Resets the game when the player wants to try again."
     }
   }
 }
