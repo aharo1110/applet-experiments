@@ -28,7 +28,7 @@ context.setActionHandler('guess', ({ guess }) => {
 
 // Reset the number to nothing
 context.setActionHandler('reset', () => {
-  if(context.data.result === 'Correct!') {
+  if(context.data.result === 'Correct. Good work!') {
     context.data = { secret_number: null, result: null };
   } else {
     context.data = { secret_number: null, result: "The number was " + context.data.secret_number + ". Try again!" };

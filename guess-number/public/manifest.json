@@ -32,6 +32,9 @@
         },
         "required": ["guess"]
       }
+    },
+    "reset": {
+      "description": "Resets the game."
     }
   }
 }
