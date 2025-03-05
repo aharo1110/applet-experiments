@@ -1,0 +1,28 @@
+{
+  "name": "My Applet",
+  "description": "",
+  "icons": [
+    {
+      "src": "icon-128x128.png"
+    }
+  ],
+  "actions": {
+    "reset": {
+      "description": "Resets the card deck and hand."
+    },
+    "shuffle": {
+      "description": "Shuffles the card deck."
+    },
+    "draw": {
+      "description": "Draws some number of cards from the deck.",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}
