@@ -12,11 +12,11 @@
       "params_schema": {
         "type": "object",
         "properties": {
-          "starting_number": {
-            "type": "integer"
+          "start": {
+            "type": "number"
           },
-          "ending_number": {
-            "type": "integer"
+          "end": {
+            "type": "number"
           }
         }
       }
@@ -27,7 +27,7 @@
         "type": "object",
         "properties": {
           "guess": {
-            "type": "integer"
+            "type": "number"
           }
         },
         "required": ["guess"]
