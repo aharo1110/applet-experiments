@@ -1,0 +1,32 @@
+{
+  "name": "Currencies",
+  "description": "Allows the user to convert currencies using real-time exchange rates.",
+  "icons": [
+    {
+      "src": "icon-128x128.png"
+    }
+  ],
+  "actions": {
+    "exchange": {
+      "description": "Calculates the exchange rate from one currency to another.",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "base_symbol": {
+            "type": "string",
+            "description": "The currency to convert from. Use ISO 4217 currency codes."
+          },
+          "target_symbol": {
+            "type": "string",
+            "description": "The currency to convert to. Use ISO 4217 currency codes."
+          },
+          "amount": {
+            "type": "number",
+            "description": "The amount to convert. If not provided, the action will return the exchange rate for 1 unit of the base currency."
+          }
+        },
+        "required": ["base_symbol", "target_symbol"]
+      }
+    }
+  }
+}
