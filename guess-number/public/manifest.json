@@ -1,6 +1,6 @@
 {
-  "name": "My Applet",
-  "description": "",
+  "name": "Guess the Number",
+  "description": "A game where the user can guess a number.",
   "icons": [
     {
       "src": "icon-128x128.png"
