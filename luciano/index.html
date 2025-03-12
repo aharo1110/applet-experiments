@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="/manifest.json" />
+  <title>Blackjack (21)</title>
+  <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      font-family: system-ui;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: green;
+    }
+    #game-container {
+      background-color: #2e7d32;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    h1 {
+      color: white;
+    }
+    h2 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: gold;
+    }
+    button:hover {
+      background-color: #ffd700;
+    }
+    #player-cards,
+    #dealer-cards {
+      font-size: 18px;
+      color: white;
+    }
+    #message {
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div id="game-container">
+  <h1>Blackjack (21)</h1>
+
+  <div>
+    <h2>Dealer</h2>
+    <p id="dealer-cards">Dealer's cards</p>
+    <p id="dealer-score">Score: 0</p>
+  </div>
+
+  <div>
+    <h2>Player</h2>
+    <p id="player-cards">Player's cards</p>
+    <p id="player-score">Score: 0</p>
+  </div>
+
+  <button id="hit-btn">Hit</button>
+  <button id="stand-btn">Stand</button>
+  <button id="restart-btn">Restart</button>
+
+  <h2 id="message">Your turn</h2>
+</div>
+
+<script src="./src/main.ts" type="module" defer></script>
+</body>
+</html>
