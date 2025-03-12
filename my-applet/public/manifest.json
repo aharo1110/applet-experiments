@@ -7,7 +7,7 @@
     }
   ],
   "actions": {
-    "fetchWikiData": {
+    "fetch": {
       "description": "Fetches wiki content based on a name query.",
       "params_schema": {
         "type": "object",

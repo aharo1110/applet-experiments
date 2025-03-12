@@ -2,7 +2,7 @@ import { applets } from '@web-applets/sdk';
 
 const context = applets.register();
 
-context.setActionHandler('fetchWikiData', async (parameters) => {
+context.setActionHandler('fetch', async (parameters) => {
   if (!parameters.name) {
     console.error('Search term is required!');
     return;

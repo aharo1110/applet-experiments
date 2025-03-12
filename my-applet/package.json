@@ -5,7 +5,9 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@web-applets/sdk": "^0.2.0"
+    "@web-applets/sdk": "^0.2.0",
+    "esbuild": "^0.25.1",
+    "rollup": "^4.35.0"
   },
   "devDependencies": {
     "vite": "^5.4.9"

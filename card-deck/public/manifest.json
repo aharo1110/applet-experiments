@@ -1,6 +1,6 @@
 {
-  "name": "My Applet",
-  "description": "",
+  "name": "Card Deck",
+  "description": "A game where the user can draw cards from a deck.",
   "icons": [
     {
       "src": "icon-128x128.png"
