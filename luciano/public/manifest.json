@@ -1,23 +1,20 @@
 {
-  "name": "My Applet",
-  "description": "",
+  "name": "Blackjack",
+  "description": "A game where the user can play Blackjack.",
   "icons": [
     {
       "src": "icon-128x128.png"
     }
   ],
   "actions": {
-    "set_name": {
-      "description": "Sets the name of the user.",
-      "params_schema": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": ["name"]
-      }
+    "hit": {
+      "description": "Draws a card from the deck."
+    },
+    "stand": {
+      "description": "Stands with the current hand."
+    },
+    "restart": {
+      "description": "Resets the game."
     }
   }
 }
