@@ -6,20 +6,17 @@
       "src": "icon-128x128.png"
     }
   ],
-  "actions": [
-    {
-      "id": "fetchWikiData",
+  "actions": {
+    "fetchWikiData": {
       "description": "Fetches wiki content based on a name query.",
-      "parameters": {
+      "params_schema": {
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "description": "The title of the Wikipedia page to fetch."
+            "type": "string"
           }
-        },
-        "required": ["name"]
+        }
       }
     }
-  ]
+  }
 }
