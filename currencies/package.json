@@ -5,8 +5,8 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@web-applets/inspector": "^0.2.0",
-    "@web-applets/sdk": "^0.2.0"
+    "@web-applets/inspector": "^0.2.5",
+    "@web-applets/sdk": "^0.2.5"
   },
   "devDependencies": {
     "vite": "^5.4.9"
