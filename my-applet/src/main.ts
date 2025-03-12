@@ -1,10 +1,6 @@
 import { applets } from '@web-applets/sdk';
 
-const self = applets.register({
-  name: 'Wiki',
-});
-
-const context = applets.getContext();
+const context = applets.register();
 
 context.setActionHandler('fetchWikiData', async (parameters) => {
   if (!parameters.name) {
