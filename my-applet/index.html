@@ -10,12 +10,69 @@
       body {
         padding: 0;
         margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* full screen, without cutting off content */
+        overflow-x: hidden;
       }
-      body {
-        font-family: system-ui;
+    
+      .wiki-main {
+        background: white;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        text-align: center;
+        max-width: 800px;
+        width: 90%;
+        margin: 2rem;
+        animation: fadeIn 0.5s ease;
+      }
+    
+      .wiki-main h1 {
+        font-size: 2.5rem;
+        color: #0077cc;
+        margin-bottom: 1.5rem;
+      }
+    
+      .wiki-main img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    
+      .wiki-main p {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        color: #555;
+        text-align: justify;
+      }
+    
+      @media (max-width: 768px) {
+        .wiki-main {
+          padding: 1.5rem;
+        }
+    
+        .wiki-main h1 {
+          font-size: 2rem;
+        }
+    
+        .wiki-main p {
+          font-size: 1.05rem;
+        }
+      }
+    
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
       }
     </style>
-    <script src="./src/main.ts" type="module" defer></script>
+        <script src="./src/main.ts" type="module" defer></script>
   </head>
   <body></body>
 </html>
