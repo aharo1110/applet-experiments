@@ -1,0 +1,22 @@
+{
+  "name": "Dictionary",
+  "description": "Fetches and displays word definitions, synonyms, and pronunciation from the Dictionary API.",
+  "icons": [
+    {
+      "src": "icon-128x128.png"
+    }
+  ],
+  "actions": {
+    "fetchWordDefinition": {
+      "description": "Fetches dictionary content based on a word query.",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "word": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
