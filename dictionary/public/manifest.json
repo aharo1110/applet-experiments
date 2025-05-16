@@ -17,6 +17,17 @@
           }
         }
       }
+    },
+    "playPronunciation": {
+      "description": "Plays the pronunciation audio for the word.",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "audio": {
+            "type": "string"
+          }
+        }
+      }
     }
   }
 }

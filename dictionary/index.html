@@ -1,81 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Dictionary Applet</title>
-    <style>
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f0f2f5;
-        color: #333;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-      }
-
-      .dictionary-main {
-        background: white;
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        max-width: 600px;
-        width: 90%;
-      }
-
-      .dictionary-main h1 {
-        font-size: 2.5rem;
-        color: #4A90E2;
-        margin-bottom: 0.5rem;
-      }
-
-      .dictionary-main p {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-        line-height: 1.5;
-        color: #555;
-      }
-
-      button {
-        margin-top: 1.5rem;
-        padding: 0.6rem 1.2rem;
-        background-color: #4A90E2;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 1rem;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background-color: #357ABD;
-      }
-
-      @media (max-width: 768px) {
-        .dictionary-main {
-          padding: 1.5rem;
-        }
-
-        .dictionary-main h1 {
-          font-size: 2rem;
-        }
-
-        .dictionary-main p {
-          font-size: 1rem;
-        }
-      }
-    </style>
-    <script src="./src/main.ts" type="module" defer></script>
-  </head>
-  <body>
-    <div class="dictionary-main" id="dictionaryResult">
-      <p>Waiting for a word...</p>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="/manifest.json" />
+  <title>Dictionary Applet</title>
+  <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .dictionary-main {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #4A90E2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #357ABD;
+    }
+  </style>
+  <script src="./src/main.ts" type="module" defer></script>
+</head>
+<body>
+  <div class="dictionary-main" id="dictionaryResult">
+    <p>Waiting for a word...</p>
+  </div>
+</body>
 </html>
